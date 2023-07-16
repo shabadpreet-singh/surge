@@ -1,0 +1,673 @@
+
+% \documentclass{article}
+% \usepackage[english]{babel}
+% \usepackage[a4paper,margin=1in,footskip=0.25in]{geometry}
+% \usepackage{amssymb,amsmath,latexsym,color,amsthm,authblk,mathpazo,palatino,bbding,setspace,datetime,breakcites,hyphenat,microtype,diagbox,tikz,xcolor,tkz-graph,subcaption,graphicx,titlesec,amsbsy, listings}
+% \usepackage{titlesec}
+% \usepackage{mathptmx}
+% %\usepackage{times}
+% %\usepackage{cite}
+% \usepackage[round,authoryear]{natbib}
+% \citestyle{authordate}
+% \usepackage{hyperref,theoremref}
+% \usepackage[titletoc,title]{appendix}
+% %\usepackage[author={Souvik Roy}]{pdfcomment}
+% %\usepackage{parskip}
+% \usepackage[shortlabels]{enumitem}
+% \usepackage{float}
+% \usepackage{amssymb}
+% \restylefloat{table}
+% \everymath{\displaystyle}
+% \usepackage{pstricks}
+
+% \usepackage{tikz}
+% \usetikzlibrary{arrows}
+
+
+% %\usepackage{accents}
+% %\setlength{\parindent}{15pt}
+% \usepackage{accents}
+
+% \newcommand{\ut}[1]{\underaccent{\tilde}{#1}}
+% \renewcommand{\vec}[1]{\ut{#1}}
+
+% \definecolor{armygreen}{rgb}{0.29, 0.8, 0.13}
+% \definecolor{auburn}{rgb}{0.43, 0.21, 0.1}
+% \definecolor{burgundy}{rgb}{0.5, 0.0, 0.13}
+% \definecolor{medium red}{rgb}{.490,.298,.337}
+% \definecolor{dark red}{rgb}{.235,.141,.161}
+
+% \hypersetup{
+% 	colorlinks = true,
+% 	linkcolor = {burgundy},
+% 	citecolor = {burgundy}, 		
+% 	linkbordercolor = {white},
+% }
+
+% \captionsetup[sub]{font=scriptsize}
+
+% % Page length commands go here in the preamble
+% %\setlength{\oddsidemargin}{-0.25in} % Left margin of 1 in + 0 in = 1 in
+% %\setlength{\textwidth}{7in}   % Right margin of 8.5 in - 1 in - 6.5 in = 1 in
+% %\setlength{\topmargin}{-.75in}  % Top margin of 2 in -0.75 in = 1 in
+% %\setlength{\textheight}{9.5in}  % Lower margin of 11 in - 9 in - 1 in = 1 in
+
+% \interfootnotelinepenalty=10000
+% \raggedbottom
+
+% \let\OLDthebibliography\thebibliography
+% \renewcommand\thebibliography[1]{
+% 	\OLDthebibliography{#1}
+% 	\setlength{\parskip}{0pt}
+% 	\setlength{\itemsep}{0pt plus 0.1ex}
+% }
+
+% \newcommand{\va}{\vartriangleleft}
+% \newcommand{\vaq}{\trianglelefteq}
+% \newcommand{\rva}{\vartriangleright}
+% \newcommand{\rvaq}{\trianglerighteq}
+
+
+% \DeclareFontFamily{U}{mathx}{\hyphenchar\font45}
+% \DeclareFontShape{U}{mathx}{m}{n}{<-> mathx10}{}
+% \DeclareSymbolFont{mathx}{U}{mathx}{m}{n}
+% \DeclareMathAccent{\widebar}{0}{mathx}{"73}
+
+% \titleformat{\section}[block]{\normalfont\scshape\large\filcenter}{\thesection .}{1em}{}
+% \titleformat{\subsection}{\normalfont\scshape\large}{\thesubsection}{1em}{}
+% \titleformat{\subsubsection}{\normalfont\scshape\large}{\thesubsubsection}{1em}{}
+% \titleformat{\paragraph}
+% {\normalfont\scshape\large}{\theparagraph}{1em}{}
+% \titlespacing*{\paragraph}
+% {0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+% % Theorem Styles
+% \newtheorem{theorem}{Theorem}
+% \newtheorem{proposition}{Proposition}
+% \newtheorem{claim}{Claim}
+% \newtheorem{lemma}{Lemma}
+% \newtheorem{corollary}{Corollary}
+% \newtheorem{observation}{Observation}[section]
+% % Definition Styles
+% \theoremstyle{definition}
+% \newtheorem{definition}{Definition}[section]
+% \newtheorem{example}{Example}[section]
+% \theoremstyle{remark}
+% \newtheorem{remark}{\textsc{Remark}}[section]
+
+% \renewenvironment{proof}[1][\proofname]{{\bfseries #1: }}{\qed}
+% \newcommand{\tbf}{\textbf}
+% \newcommand{\sr}{\textcolor{red}}
+% \newcommand{\srs}{\textcolor{blue}}
+% \newcommand{\srsk}{\textcolor{armygreen}}
+% \newdateformat{monthyeardate}{\monthname[\THEMONTH], \THEYEAR}
+%\begin{document}
+
+\begin{proof}
+Let $(\succ,\rva)$ be a preference profile where for all $i\in \{1,2,3\}$, $M_i$ has preference $\succ_i$ and $W_i$ has preference $\rva_i$, and $M_1$ is matched to her third preferred women in DA. Without loss of generality, let's assume $W_1 \succ_1 W_2 \succ_1 W_3$, and $M_2$ and $M_3$ are matched with $W_1$ and $W_2$, respectively in DA. Since the outcome of DA is stable, $W_1$ must prefer $M_2$ over $M_1$ and $W_2$ must prefer $M_3$ over $M_1$. Therefore, we have \[  \begin{array}{c}
+	   \rva_1 \\
+	\hline
+	\vdots \\
+	M_2\\
+        \vdots\\
+        M_1\\
+        \vdots
+\end{array} 
+\hspace{10mm}
+%
+\begin{array}{c}
+	\rva_2 \\
+	\hline
+	\vdots \\
+	M_3\\
+        \vdots\\
+        M_1\\
+        \vdots
+\end{array} 
+\]
+Further, $M_2$ will prefer $W_1$ over $W_3$ and $M_3$ will prefer $W_2$ over $W_3$. To see this, assume for contradiction  $M_2$ prefers $W_3$ over $W_1$. Since finally $M_2$ is matched with $W_1$, it means at some stage of the algorithm (say $t^{th}$ stage), $M_2$'s proposal to $W_3$ got rejected. Suppose $M_1$'s proposal to $W_3$ caused this rejection. Since $W_3$ is $M_1$'s least preferred woman, it must be that he had already proposed to $W_1$ and $W_2$. Therefore, by DA algorithm, $W_1$ and $W_2$ had at least one proposal at $t^{th}$ stage. But this is a contradiction as $W_3$ had two proposals at $t^{th}$ stage. Now assume $M_3$'s proposal to $W_3$ caused the rejection of $M_2$'s proposal to $W_3$ at the $t^{th}$ stage. Since finally $M_3$ is matched with $W_2$, it means, at some later stage, his proposal to $W_3$ also got rejected. But this rejection can only cause due to $M_1$'s proposal to $W_3$, which again means, at that stage, $W_3$ had two proposals, a contradiction. Thus, we have
+
+% Consider the following matching, $M_1$ is matched with $W_1$, $M_2$ is matched with $W_3$, and $M_3$ is matched with $W_2$. We claim that this matching is stable. As $M_1$ is getting his top-women, he will not be in a blocking pair. Suppose $M_2$ blocks with $W_2$. This means $M_2$ prefers $W_2$ over $W_3$, hence the most, and $W_2$ prefers $M_2$ over $M_3$, hence, the most. But this contradicts as they are not matched in DA. Finally, suppose $M_3$ blocks with either $W_1$ or $W_3$. 
+
+
+\[  \begin{array}{c}
+	\succ_2 \\
+	\hline
+	\vdots \\
+	W_1\\
+        \vdots\\
+        W_3\\
+        \vdots
+\end{array} 
+\hspace{10mm}
+%
+\begin{array}{c}
+	\succ_3 \\
+	\hline
+	\vdots \\
+	W_2\\
+        \vdots\\
+        W_3\\
+        \vdots
+\end{array} 
+\]
+We claim that, in TTC, $M_1$ will be matched with $W_3$. Note that $M_2$ and $M_3$ have either $W_1$ or $W_2$ as their top preferred women. Moreover, $W_1$ and $W_2$ have either $M_2$ or $M_3$ as their top-preferred men. Therefore, in the first step of TTC, either they will point towards each other, or they will point towards themselves, or they both will point to either $M_2$ or $M_3$. 
+If they both point to each other or themselves, they will get matched to $W_1$ and $W_2$, and as a result, $M_1$ will go with $W_3$. So, assume they both point to one of them. Since, in DA, $M_2$ got matched with $W_1$ and $M_3$ is matched with $W_2$, this means either both point to $M_2$ and $W_1$ is with $M_2$ initially, or both point to $M_3$ and $W_2$ is with $M_3$ initially. Suppose both point to $M_2$ and $W_1$ is with $M_2$ initially. Hence, $M_2$ will be matched with $W_1$. Further, as $M_3$ prefers $W_2$ over $W_3$ and $W_2$ prefers $M_3$ over $M_1$, $M_3$ will be matched to $W_2$ in the second round implying $M_1$ will be matched with $W_3$. The argument is similar when both point to $M_3$ and $W_2$ is with $M_3$ initially. This completes the proof of the lemma.
+\end{proof}
+
+% Suppose not, and first assume that $M_1$ is matched with $W_1$. Since $W_1$ prefers $M_2$ over $M_1$, by the TTC algorithm,  it necessarily means $M_2$ is matched with someone whom he prefers over $W_1$. Thus, $M_2$ is matched with $W_2$ in TTC, and hence, $M_3$ is matched with $W_3$. Also, as $M_3$ prefers $W_2$ over $W_3$, his match in the algorithm, it must be that $W_2$ prefers her match over $M_3$. This means $M_2\rva_2 M_3$. Combining all these observations, we have
+
+% \[  \begin{array}{c}
+% 	   \rva_2 \\
+% 	\hline
+% 	M_2\\
+%         M_3\\
+%         M_1\\
+% \end{array} 
+% \hspace{10mm}
+% %
+% \begin{array}{c}
+% 	\succ_2 \\
+% 	\hline
+% 	W_2 \\
+% 	W_1\\
+%         W_3\\
+% \end{array} 
+% \]
+
+% % and \[  \begin{array}{c}
+% % 	\succ_2 \\
+% % 	\hline
+% % 	\vdots \\
+% % 	W_1\\
+% %         \vdots\\
+% %         W_3\\
+% %         \vdots
+% % \end{array} 
+% % \hspace{10mm}
+% % %
+% % \begin{array}{c}
+% % 	\succ_3 \\
+% % 	\hline
+% % 	\vdots \\
+% % 	W_2\\
+% %         \vdots\\
+% %         W_3\\
+% %         \vdots
+% % \end{array} 
+% % \]
+
+
+% % $M_1$, $M_2$, and $M_3$ have preferences $\succ_1$, $\succ_2$, and $\succ_3$, respectively, and $W_1$, $W_2$, and $W_3$ have preferences $\rva_1$, $\rva_2$, and $\rva_3$, respectively. Without loss of generality $W_1 \succ_1 W_2 \succ_1 W_3$.
+
+
+% Without loss of generality assume that $M_1$ has the preference $\succ_1$ where  $W_1 \succ_1 W_2 \succ_1 W_3$. If $M_1$ is getting his third preferred woman ($W_3$) in DA, it means he got rejected by the top two women in his preference in the algorithm. Therefore, three cases are possible. We consider them separately below.
+
+% \noindent\textbf{Case I :-} All men have  $W_1$ as their first preferred women.
+
+% Now applying DA;
+% $$\textbf{Step 1}: M_1, M_2, M_3 \text{ proposes } W_1$$
+% For $W_1$ to reject $M_1$, one of ${M_2, M_3}$ must be above $M_1$ in her preference profile.  Without loss of generality, assume $M_2$ to be  the first preference of  $W_1$.  Therefore preference profile of 
+% \begin{equation}
+% W_1 = (M_2 \succ ... ) \label{eq1}
+% \end{equation}
+
+% \begin{center}$\therefore$ $W_1$ reject both $M_1$ and $M_3$.\end{center}
+
+% Now, for $M_1$ to get rejected by his $2^{nd}$ preferred women $M_3$ must also propose $W_2$ and get accepted by her. Therefore, preference profile of  \begin{equation}W_2 = (... M_3 \succ ... M_1 \succ...)\label{eq2}\end{equation}
+
+% \begin{center}\textbf{Step 2 :}$W_2$ accepts $M_3$ and rejects $M_1$\end{center}
+% $$\textbf{Step 3 :} M_1 \text{ proposes } W_3$$
+
+% Not getting any other proposals, she accepts $M_1$, and $M_1$ gets paired with his third preferred woman.
+
+% By using \eqref{eq1} and \eqref{eq2}, we can make a preference profile table of all men and women; 
+% \begin{center}
+% \begin{tabular}{ c|c|c } 
+ 
+%  $M_1$ & $M_2$ & $M_3$  \\ 
+% \hline
+%  $W_1$ & $W_1$ & $W_1$ \\ 
+%  $W_2$ & : & $W_2$ \\ 
+%  $W_3$ & : & :\\
+
+% \end{tabular}
+% \begin{tabular}{ c|c|c } 
+ 
+%  $W_1$ & $W_2$ & $W_3$  \\ 
+% \hline
+%  $M_2$ & : & :\\ 
+%  : & $M_3$ & :\\ 
+%  : & : & :\\
+%   & $M_1$ & \\
+%   & : & \\
+
+% \end{tabular}
+% \end{center}
+% Now, we apply TTC by constructing a directed graph with 3 vertices, one for each man and putting a directed edge from vertex of men i to vertex of men j if the top-ranked object of men i is endowed with
+% men j.\\
+% In each graph, men who are part of the \textit{cycle with blue edges} can trade their endowments.
+% \\
+% \begin{center}
+% \begin{tikzpicture}[->,>=stealth',auto,node distance=3cm,
+%   thick,main node/.style={circle,draw,font=\sffamily\Large\bfseries}]
+
+%   \node[main node] (1) {$M_1$};
+%   \node[main node] (2) [below right of=1] {$M_2$ $[W_1]$};
+%   \node[main node] (3) [above right of=2] {$M_3$};
+  
+%  %\node[main node] (4) [right of=3] {d};
+
+% % [->,>=stealth',auto,node distance=1mm,
+% %   thick,main node/.style={[],draw,font=\sffamily\small}]
+
+% %   \node[main node] (4) [below of=2] {$W_2$};
+
+%   \path[every node/.style={font=\sffamily\small}]
+%     (1) edge node [right] {} (2)
+%     (2) edge[blue] [loop right] node [right] {} (2)
+%     (3) edge node [left] {} (2);
+% %    (3) edge node [right] {} (4)
+%  %   (4) edge[bend right] node [left] {} (1);
+% % \node [below=1.5cm] at (2)
+%  %       {\textbf{Step 1} };
+% \end{tikzpicture}
+% \end{center}
+% Here, we see that there is only one cycle involving
+% $M_2$. Therefore, $M_2$ gets paired with $W_1$.
+% \\
+
+% \begin{center}
+% \begin{tikzpicture}[->,>=stealth',auto,node distance=3cm,
+%   thick,main node/.style={circle,draw,font=\sffamily\Large\bfseries}]
+
+%   \node[main node] (1) {$M_1$};
+%   \node[main node] (3) [right of=1] {$M_3[W_2]$};
+  
+%  %\node[main node] (4) [right of=3] {d};
+
+% % [->,>=stealth',auto,node distance=1mm,
+% %   thick,main node/.style={[],draw,font=\sffamily\small}]
+
+% %   \node[main node] (4) [below of=2] {$W_2$};
+
+%   \path[every node/.style={font=\sffamily\small}]
+%     (1) edge node [right] {} (3)
+%     (3) edge[blue, loop right] node [right ] {} (3);
+% %    (3) edge node [right] {} (4)
+%  %   (4) edge[bend right] node [left] {} (1);
+% % \node [below=1.5cm] at (2)
+%  %       {\textbf{Step 1} };
+% \end{tikzpicture}
+% \end{center}
+% Here also, we see that there is only one cycle involving
+% $M_3$. Therefore, $M_3$ gets paired with $W_2$.
+% \\
+% $\therefore$ With no other choice left \textbf{$M_1$ gets paired to $W_3$} (\textit{his third preference}).
+% \\ \\
+
+
+% \textbf{Case II :-} $M_2$ and $M_3$ have $M_1$'s second preffered woman( i.e. $W_2$) as their first preference.
+
+% Now, applying DA;
+% $$
+% \textbf{Step 1}
+% \begin{cases}
+% {M_1} \text{ proposes} W_1 \\
+% {M_2, M_3} \text{ proposes} W_2
+% \end{cases}
+% $$
+% Without loss of generality, let us assume that $M_3$ gets rejected by $W_2$, which means $M_3$ is somewhere below $M_2$ in $W_2$ preference. i.e.  \begin{equation}W_2 = (M_2 \succ ...)\label{eq3}\end{equation}
+
+% Now if $M_3$ were to propose $W_2$, $M_1$ will be paired with $W_1$, which is not something we want, so in order for $M_1$ to form pair with $W_3$, $M_3$ must propose $W_1$ ans she must accept his proposal. 
+
+% Therefore, preference profile of \begin{equation}W_1 = (... M_3 \succ ... M_1 \succ...)\label{eq4}\end{equation}
+
+% $$\textbf{Step 2 :} M_3 \text{ proposes }W_1$$
+% $\therefore$$W_1$ accepts $M_3$ and rejects $M_1$
+
+% $$\textbf{Step 3 :}M_1 \text{ proposes }W_2$$
+% As $W_2$ already got a proposal from her top pref $M_2$, therefore she'll reject $M_1$.
+% $$\textbf{Step 4 :} M_1 \text{ proposes } W_3$$
+% With no other proposals, she'll accept $M_1$. With this, $M_1$ is finally paired with his third preference, $W_3$.
+
+% By using \eqref{eq3} and \eqref{eq4}, we can make a preference profile table of all men and women; 
+% \begin{center}
+% \begin{tabular}{ c|c|c } 
+ 
+%  $M_1$ & $M_2$ & $M_3$  \\ 
+% \hline
+%  $W_1$ & $W_2$ & $W_2$ \\ 
+%  $W_2$ & : & $W_1$ \\ 
+%  $W_3$ & : & :\\
+
+% \end{tabular}
+% \begin{tabular}{ c|c|c } 
+ 
+%  $W_1$ & $W_2$ & $W_3$  \\ 
+% \hline
+%  : &  & \\ 
+%  $M_3$ & $M_2$ & :\\ 
+%  : & : & :\\
+%   $M_1$& : & :\\
+%  : &  & \\
+
+% \end{tabular}
+% \end{center}
+% \\
+% Now, we apply TTC by constructing a directed graph with 3 vertices, one for each man and putting a directed edge from vertex of men i to vertex of men j if the top-ranked object of men $i$ is endowed with
+% men $j$.
+
+% In each graph, men who are part of the \textit{cycle with blue edges} can trade their endowments.
+% \\
+
+
+% \begin{center}
+% \begin{tikzpicture}[->,>=stealth',auto,node distance=3cm,
+%   thick,main node/.style={circle,draw,font=\sffamily\Large\bfseries}]
+
+%   \node[main node] (1) {$M_1$};
+%   \node[main node] (2) [below right of=1] {$M_2$ $[W_2]$};
+%   \node[main node] (3) [above right of=2] {$M_3[W_1]$};
+  
+%  %\node[main node] (4) [right of=3] {d};
+
+% % [->,>=stealth',auto,node distance=1mm,
+% %   thick,main node/.style={[],draw,font=\sffamily\small}]
+
+% %   \node[main node] (4) [below of=2] {$W_2$};
+
+%   \path[every node/.style={font=\sffamily\small}]
+%     (1) edge[bend left] node [ right] {} (3)
+%     (2) edge[blue] [loop left] node [left] {} (2)
+%     (3) edge node [left] {} (2);
+% %    (3) edge node [right] {} (4)
+%  %   (4) edge[bend right] node [left] {} (1);
+% % \node [below=1.5cm] at (2)
+%  %       {\textbf{Step 1} };
+% \end{tikzpicture}
+% \end{center}
+% It doesn't matter among $M_3, M_2$ who is at top preference of $W_1$ as we see that there is only one cycle involving $M_2$. Therefore, $M_2$ gets paired with $W_1$.
+
+% \begin{center}
+% \begin{tikzpicture}[->,>=stealth',auto,node distance=3cm,
+%   thick,main node/.style={circle,draw,font=\sffamily\Large\bfseries}]
+
+%   \node[main node] (1) {$M_1$};
+%   \node[main node] (3) [right of=1] {$M_3[W_1]$};
+  
+%  %\node[main node] (4) [right of=3] {d};
+
+% % [->,>=stealth',auto,node distance=1mm,
+% %   thick,main node/.style={[],draw,font=\sffamily\small}]
+
+% %   \node[main node] (4) [below of=2] {$W_2$};
+
+%   \path[every node/.style={font=\sffamily\small}]
+%     (1) edge node [right] {} (3)
+%     (3) edge[blue, loop right] node [right] {} (3);
+% %    (3) edge node [right] {} (4)
+%  %   (4) edge[bend right] node [left] {} (1);
+% % \node [below=1.5cm] at (2)
+%  %       {\textbf{Step 1} };
+% \end{tikzpicture}
+% \end{center}
+% Here also, we see that there is only one cycle involving $M_3$. Therefore, $M_3$ gets paired with $W_1$.\\
+% $\therefore$ With no other choice left \textbf{$M_1$ gets paired to $W_3$}(\textit{his third preference}).
+% \\
+% \\
+% \textbf{Case III :- } One of the men has $W_1$ as his first preference and other has $W_2$ as his first preference.
+
+% Without loss of generality, assuming the preferences of all men be:
+
+% \begin{center}
+%     \begin{tabular}{c|c|c}
+%         $M_1$ & $M_2$ & $M_3$ \\
+%         \hline
+%         $W_1$ & $W_1$ & $W_2$ \\
+%         $W_2$ & :   &   : \\
+%         $W_3$ & :   &   :
+%     \end{tabular}
+% \end{center}
+
+% A few things required to have $M_1$ get paired with his third preference are:
+% \begin{itemize}
+%     \item $W_2$ must prefer $M_3$ over $M_1$ as to reject $M_1$ later.
+%     \item $W_1$ must prefer $M_2$ over $M_1$ as to reject $M_1$ at forst step of DA.
+% \end{itemize}
+% Keeping above things in mind preferences of women will look like:
+
+% \begin{center}
+%     \begin{tabular}{c|c|c}
+%         $W_1$ & $W_2$ & $W_3$ \\
+%         \hline
+%           :   &   :   &   \\
+%         $M_2$ & $M_3$ & : \\
+%           :   &   :   & : \\
+%         $M_1$ & $M_1$ & : \\
+%           :   &   :   &   
+%     \end{tabular}
+% \end{center}
+
+% On the basis of preferences of $W_1$ and $W_2$, assignment through TTC will progress differently, so we will make cases and see the result of TTC over different preferences of $W_1$ and $W_2$  :
+
+% \textbf{a)}
+% \begin{center}
+%     \begin{tabular}{c|c|c}
+%         $W_1$ & $W_2$ & $W_3$ \\
+%         \hline
+%           $M_3$   &  $M_2$   & :  \\
+%         $M_2$ & $M_3$ & : \\
+%         $M_1$ & $M_1$ & : \\
+%     \end{tabular}
+% \end{center}
+
+% Applying TTC;
+
+% \begin{center}
+% \begin{tikzpicture}[->,>=stealth',auto,node distance=3cm,
+%   thick,main node/.style={circle,draw,font=\sffamily\Large\bfseries}]
+
+%   \node[main node] (1) {$M_1$};
+%   \node[main node] (2) [below right of=1] {$M_2[W_2]$};
+%   \node[main node] (3) [above right of=2] {$M_3[W_1]$};
+  
+%  %\node[main node] (4) [right of=3] {d};
+
+% % [->,>=stealth',auto,node distance=1mm,
+% %   thick,main node/.style={[],draw,font=\sffamily\small}]
+
+% %   \node[main node] (4) [below of=2] {$W_2$};
+
+%   \path[every node/.style={font=\sffamily\small}]
+%     (1) edge[bend left] node [ right] {} (3)
+%     (2) edge[blue] [bend left] node [right] {} (3)
+%     (3) edge[blue, bend left] node [right] {} (2);
+% %    (3) edge node [right] {} (4)
+%  %   (4) edge[bend right] node [left] {} (1);
+% % \node [below=1.5cm] at (2)
+%  %       {\textbf{Step 1} };
+% \end{tikzpicture}
+% \end{center}
+% A cycle exists between $M_2 \& M_3$. Therefore, $M_2$ gets paired to $W_1$, while  $M_3$ gets paired to $W_2$.
+% \\ \\
+% The only women left unmatched is $W_3$, so \textbf{$M_1$ gets paired with $W_3$}.\\
+
+% \textbf{b)}
+% \begin{center}
+%     \begin{tabular}{c|c|c}
+%         $W_1$ & $W_2$ & $W_3$ \\
+%         \hline
+%         $M_3$ & $M_3$   & :  \\
+%         $M_2$ & : & : \\
+%         $M_1$ & : & : \\
+%     \end{tabular}
+% \end{center}
+
+% Applying TTC;
+% \begin{center}
+% \begin{tikzpicture}[->,>=stealth',auto,node distance=3cm,
+%   thick,main node/.style={circle,draw,font=\sffamily\Large\bfseries}]
+
+%   \node[main node] (1) {$M_1$};
+%   \node[main node] (2) [below right of=1] {$M_2$};
+%   \node[main node] (3) [above right of=2] {$M_3[W_1, W_2]$};
+  
+%  %\node[main node] (4) [right of=3] {d};
+
+% % [->,>=stealth',auto,node distance=1mm,
+% %   thick,main node/.style={[],draw,font=\sffamily\small}]
+
+% %   \node[main node] (4) [below of=2] {$W_2$};
+
+%   \path[every node/.style={font=\sffamily\small}]
+%     (1) edge node [ right] {} (3)
+%     (2) edge node [right] {} (3)
+%     (3) edge[blue, loop right] node [right] {} (2);
+% %    (3) edge node [right] {} (4)
+%  %   (4) edge[bend right] node [left] {} (1);
+% % \node [below=1.5cm] at (2)
+%  %       {\textbf{Step 1} };
+% \end{tikzpicture}
+% \end{center}
+% Here, we see there is only one cycle involving $M_3$. Therefore, $M_3$ gets paired with $W_2$.
+
+% \begin{center}
+% \begin{tikzpicture}[->,>=stealth',auto,node distance=3cm,
+%   thick,main node/.style={circle,draw,font=\sffamily\Large\bfseries}]
+
+%   \node[main node] (1) {$M_1$};
+%   \node[main node] (2) [right of=1] {$M_2[W_1]$};
+  
+%  %\node[main node] (4) [right of=3] {d};
+
+% % [->,>=stealth',auto,node distance=1mm,
+% %   thick,main node/.style={[],draw,font=\sffamily\small}]
+
+% %   \node[main node] (4) [below of=2] {$W_2$};
+
+%   \path[every node/.style={font=\sffamily\small}]
+%     (1) edge node [ right] {} (2)
+%     (2) edge[blue, loop right] node [right] {} (2);
+% %    (3) edge node [right] {} (4)
+%  %   (4) edge[bend right] node [left] {} (1);
+% % \node [below=1.5cm] at (2)
+%  %       {\textbf{Step 1} };
+% \end{tikzpicture}
+% \end{center}
+% Here, a cycle involving $M_2$ exists. Therefore, $M_2$ gets paired with $W_1$.
+% \\ \\
+% The only women left unmatched is $W_3$, so \textbf{$M_1$ gets paired with $W_3$}.\\
+
+% \textbf{c)}
+% \begin{center}
+%     \begin{tabular}{c|c|c}
+%         $W_1$ & $W_2$ & $W_3$ \\
+%         \hline
+%           $M_2$   & $M_2$   & :  \\
+%                 : & $M_3$ & : \\
+%                 : & $M_1$ & : \\
+%     \end{tabular}
+% \end{center}
+
+
+% Applying TTC;
+% \begin{center}
+% \begin{tikzpicture}[->,>=stealth',auto,node distance=3cm,
+%   thick,main node/.style={circle,draw,font=\sffamily\Large\bfseries}]
+
+%   \node[main node] (1) {$M_1$};
+%   \node[main node] (2) [below right of=1] {$M_2[W_1, W_2]$};
+%   \node[main node] (3) [above right of=2] {$M_3$};
+  
+%  %\node[main node] (4) [right of=3] {d};
+
+% % [->,>=stealth',auto,node distance=1mm,
+% %   thick,main node/.style={[],draw,font=\sffamily\small}]
+
+% %   \node[main node] (4) [below of=2] {$W_2$};
+
+%   \path[every node/.style={font=\sffamily\small}]
+%     (1) edge node [ right] {} (2)
+%     (2) edge[blue, loop right] node [right] {} (2)
+%     (3) edge node [right] {} (2);
+% %    (3) edge node [right] {} (4)
+%  %   (4) edge[bend right] node [left] {} (1);
+% % \node [below=1.5cm] at (2)
+%  %       {\textbf{Step 1} };
+% \end{tikzpicture}
+% \end{center}
+% Here, we see there is only one cycle involving $M_2$. Therefore, $M_2$ gets paired with $W_1$.
+
+% \begin{center}
+% \begin{tikzpicture}[->,>=stealth',auto,node distance=3cm,
+%   thick,main node/.style={circle,draw,font=\sffamily\Large\bfseries}]
+
+%   \node[main node] (1) {$M_1$};
+%   \node[main node] (3) [right of=1] {$M_3[W_2]$};
+  
+%  %\node[main node] (4) [right of=3] {d};
+
+% % [->,>=stealth',auto,node distance=1mm,
+% %   thick,main node/.style={[],draw,font=\sffamily\small}]
+
+% %   \node[main node] (4) [below of=2] {$W_2$};
+
+%   \path[every node/.style={font=\sffamily\small}]
+%     (1) edge node [ right] {} (3)
+%     (3) edge[blue, loop right] node [right] {} (3);
+% %    (3) edge node [right] {} (4)
+%  %   (4) edge[bend right] node [left] {} (1);
+% % \node [below=1.5cm] at (2)
+%  %       {\textbf{Step 1} };
+% \end{tikzpicture}
+% \end{center}
+% Here, a cycle involving $M_3$ exists. Therefore, $M_3$ gets paired with $W_2$.
+% \\ \\
+% The only women left unmatched is $W_3$, so \textbf{$M_1$ gets paired with $W_3$}.\\
+
+% \textbf{d)}
+% \begin{center}
+%     \begin{tabular}{c|c|c}
+%         $W_1$ & $W_2$ & $W_3$ \\
+%         \hline
+%           $M_2$   & $M_3$   & :  \\
+%                 : & : & : \\
+%                 : & : & : \\
+%     \end{tabular}
+% \end{center}
+
+% Applying TTC;
+% \begin{center}
+% \begin{tikzpicture}[->,>=stealth',auto,node distance=3cm,
+%   thick,main node/.style={circle,draw,font=\sffamily\Large\bfseries}]
+
+%   \node[main node] (1) {$M_1$};
+%   \node[main node] (2) [below right of=1] {$M_2[W_1]$};
+%   \node[main node] (3) [above right of=2] {$M_3[W_2]$};
+  
+%  %\node[main node] (4) [right of=3] {d};
+
+% % [->,>=stealth',auto,node distance=1mm,
+% %   thick,main node/.style={[],draw,font=\sffamily\small}]
+
+% %   \node[main node] (4) [below of=2] {$W_2$};
+
+%   \path[every node/.style={font=\sffamily\small}]
+%     (1) edge node [ right] {} (2)
+%     (2) edge[blue, loop right] node [right] {} (2)
+%     (3) edge[blue, loop right] node [right] {} (3);
+% %    (3) edge node [right] {} (4)
+%  %   (4) edge[bend right] node [left] {} (1);
+% % \node [below=1.5cm] at (2)
+%  %       {\textbf{Step 1} };
+% \end{tikzpicture}
+% \end{center}
+% Here, we see there exist 2 different cycles involving $M_2 \& M_3$ separately. Therefore, $M_2:W_1$, and $M_3:W_2$ gets paired.
+% \\  \\
+% The only women left unmatched is $W_3$, so \textbf{$M_1$ gets paired with $W_3$}.\\ \\
+% \\
+% $\therefore$ In all three cases, we see that if $M_1$ gets his third preference in DA, then \textbf{$M_1$ will always get the third preference using TTC}.
+
+%\end{proof}
+%\end{document}
